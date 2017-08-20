@@ -92,7 +92,7 @@ class BinaryRBM(BaseBinaryRBM, BaseTensorFlowModel):
             self._stochastic_gradient_descent(X)
         else:
             raise ValueError("Invalid optimization algorithm.")
-        return
+        return self
 
     @classmethod
     def _get_weight_variables_names(cls):
